@@ -1,0 +1,10 @@
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bg-color{
+    background-color: rgb(162, 197, 206);
+    margin-top: -8px;
+}

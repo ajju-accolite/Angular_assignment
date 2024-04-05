@@ -1,0 +1,15 @@
+
+
+<div class="card" style="width: 21rem; margin-bottom: 35px;">
+  <img src="../../../assets/bgimg.jpg" class="card-img-top img-design" alt="...">
+  <img src="../../../assets/profile.png" class="card-img-top img-setup" alt="...">
+  <div class="card-body">
+    <a routerLink="/userInfo/{{ user.id }}" class=" info-button btn text-reset user-name "> {{ user.name}} </a>
+    <!-- <h5 class="text-reset user-name font-weight-bold"> {{ user.name}}</h5> -->
+    <p class="card-title user-email">{{user.email}}</p>
+    <p><i class="fa-brands social-icon fa-xl fa-instagram"></i> <span class="font-margin"><i class="fa-brands fa-xl fa-linkedin-in"></i></span></p>  
+    <!-- <a routerLink="/user-details/{{ user.id }}" class=" info-button btn btn-outline-danger"> Full Details</a> -->
+  </div>
+</div>
+
+

@@ -1,0 +1,25 @@
+
+
+
+.div2 {
+
+    background-image: url('../../../assets/bgimage.webp');
+    width: 40%;
+    height: 313px;
+    padding: 50px;
+    border: 1px solid red;
+    margin: auto;
+    object-fit: fill;
+  }
+
+
+
+.div3{
+    /* width:40% ; */
+    height: 200% ;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: -27px;
+}
