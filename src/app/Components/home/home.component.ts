@@ -4,22 +4,23 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  users: any[] = [];
+  data: any[] = [];
   loading: boolean = true;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.fetchUsers();
+    this.getUser();
   }
 
-  fetchUsers() {
-    this.http.get<any[]>('https://jsonplaceholder.typicode.com/users')
-      .subscribe(users => {
-        this.users = users;
+  getUser() {
+    this.http
+      .get<any[]>('https://jsonplaceholder.typicode.com/users')
+      .subscribe((data) => {
+        this.data = data;
         this.loading = false;
       });
   }

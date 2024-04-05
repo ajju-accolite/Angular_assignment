@@ -1,10 +1,9 @@
-.row{
-    display: flex;
-    justify-content: space-between;
+.row {
+  display: flex;
+  justify-content: space-between;
 }
 
-
-.bg-color{
-    background-color: rgb(162, 197, 206);
-    margin-top: -8px;
+.bg-color {
+  background-color: rgb(162, 197, 206);
+  margin-top: -8px;
 }
